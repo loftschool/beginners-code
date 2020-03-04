@@ -4,100 +4,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campy</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <title>Lion Bank | Main Page</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <a href="/" class="logo">
-        <img src="" alt="" class="logo__pic">
-      </a>
-        <address class="contacts">
-          <a href="tel:+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-          <div class="contacts__workhours">Всегда на связи</div>
-        </address>
-    </header>
-    <div class="page-content">
-      <main class="main-content">
-        <nav class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a href="#" class="breadcrumbs__link">Главная</a>
-              <div class="breadcrumbs__separator">/</div>
-            </li>
-            <li class="breadcrumbs__active-item">
-              <a href="#" class="breadcrumbs__active-link">Маршруты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="route">
-          <div class="route__image">
-            <img src="" alt="" class="route__image-elem">
-            <h1 class="route__image-title">Маршрут «Горы»</h1>
-          </div>
-          <div class="route__header">
-            <div class="iconed-title">
-              <img src="" alt="" class="iconed-title__icon">
-              <div class="iconed-title__text">База «Cолнышко»</div>
-            </div>
-            <ul class="rating">
-              <li class="rating__item"> <img src="" alt="" class="rating__star"> </li>
-              <li class="rating__item"> <img src="" alt="" class="rating__star"> </li>
-              <li class="rating__item"> <img src="" alt="" class="rating__star"> </li>
-              <li class="rating__item"> <img src="" alt="" class="rating__star"> </li>
-              <li class="rating__item"> <img src="" alt="" class="rating__star"> </li>
-            </ul>
-          </div>
-          <article class="route__description">
-            <p class="route__description-paragraph">
-              <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Iste ad accusantium quisquam quos cum consequuntur voluptas tenetur, tempora voluptatibus, quae ullam mollitia deserunt error cupiditate at nostrum perspiciatis tempore? Obcaecati?
-            </p>
-            <h3 class="route__description-title">Lorem ipsum dolor sit.</h3>
-            <ul class="route__description-list">
-              <li class="route__description-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam, ipsa cum tempore natus ducimus atque sapiente expedita. Ab eos nisi perspiciatis quis quidem doloribus accusantium obcaecati voluptatum natus necessitatibus.
-              </li>
-              <li class="route__description-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsam, ipsa cum tempore natus ducimus atque sapiente expedita. Ab eos nisi perspiciatis quis quidem doloribus accusantium obcaecati voluptatum natus necessitatibus.
-              </li>
-            </ul>
-          </article>
-          <div class="paginator">
-            <div class="paginator__display">Маршрут 1 из 7</div>
-            <a href="#" class="paginator__prev"><</a>
-            <ul class="paginator__list">
-              <li class="paginator__item">1</li>
-              <li class="paginator__item">2</li>
-              <li class="paginator__item">3</li>
-              <li class="paginator__item">4</li>
-              <li class="paginator__item">5</li>
-              <li class="paginator__item">6</li>
-              <li class="paginator__item">7</li>
-            </ul>
-            <a href="#" class="paginator__next">></a>
+  <div class="wrapper main-page-wrapper">
+
+    <section class="hero">
+      <div class="container">
+        <header class="header">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="lion bank logo" class="logo__img">
+          </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--active"> <a href="#" class="menu__link">Главная</a> </li>
+                <li class="menu__item"> <a href="#" class="menu__link">Услуги</a> </li>
+                <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
+              </ul>
+            </nav>
+            <address class="contacts">
+              <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+              <div class="contacts__dropdown-title">График работы</div>
+            </address>
+        </header>
+        <div class="hero__content">
+          <div class="hero__text-section">
+            <h1 class="hero__title">Не отказывай себе в желании быть первым</h1>
+            <h4 class="hero__subtitle">Банк с львиным характером</h4>
+            <a href="#" class="btn btn--color--ginger">Подробнее</a>
           </div>
         </div>
-      </main>
-      <aside class="sidebar">
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <img src="" alt="" class="menu__icon">
-              <div class="menu__title">Главная</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Лучшие предложения банка</h2>
+        <ul class="offers">
+          <li class="offers__item offers__item--theme--grey">
+            <div class="offers__header">
+              <img src="./img/icons/card_grey.png" class="offers__header-img" alt="">
+            </div>
+              <div class="offers__content">
+                <h3 class="offers__title">Карта «Базовая»</h3>
+                <div class="offers__prices">
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">60 Р.-</div>
+                    <div class="offers__price-desc">Обслуживание карты</div>
+                  </div>
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">
+                      <span class="offers__price-range">до</span> 4%
+                    </div>
+                    <div class="offers__price-desc">Кешбек за любые покупки</div>
+                  </div>
+                </div>
+                <div class="offers__btn-wrapper">
+                  <a href="#" class="btn btn--color--black">Подробнее</a>
+                </div>
+              </div>
+          </li>
+          <li class="offers__item offers__item--theme--blue">
+            <div class="offers__header">
+              <img src="./img/icons/card_blue.png" class="offers__header-img" alt="">
+            </div>
+              <div class="offers__content">
+                <h3 class="offers__title">Карта «Оптима»</h3>
+                <div class="offers__prices">
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">90 Р.-</div>
+                    <div class="offers__price-desc">Обслуживание карты</div>
+                  </div>
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">
+                      <span class="offers__price-range">до</span> 5%
+                    </div>
+                    <div class="offers__price-desc">Кешбек за любые покупки</div>
+                  </div>
+                </div>
+                <div class="offers__btn-wrapper">
+                  <a href="#" class="btn btn--color--black">Подробнее</a>
+                </div>
+              </div>
+          </li>
+          <li class="offers__item offers__item--theme--gold">
+            <div class="offers__header">
+              <img src="./img/icons/card_gold.png" class="offers__header-img" alt="">
+            </div>
+              <div class="offers__content">
+                <h3 class="offers__title">Карта «Платинум»</h3>
+                <div class="offers__prices">
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">490 Р.-</div>
+                    <div class="offers__price-desc">Обслуживание карты</div>
+                  </div>
+                  <div class="offers__prices-cell">
+                    <div class="offers__price">
+                      <span class="offers__price-range">до</span> 6%
+                    </div>
+                    <div class="offers__price-desc">Кешбек за любые покупки</div>
+                  </div>
+                </div>
+                <div class="offers__btn-wrapper">
+                  <a href="#" class="btn btn--color--black">Подробнее</a>
+                </div>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Новости и акции</h2>
+        <ul class="news">
+          <li class="news__item">
+            <img src="./img/content/news-1.jpg" alt="Мобильное приложение" class="news__cover">
+            <div class="news__text-content">
+              <time class="news__date">ноябрь 2019</time>
+              <div class="news__title">Удобное мобильное приложение</div>
+              <div class="news__desc">
+                Хороший банк, хорошие условия
+              </div>
+            </div>
+          </li>
+          <li class="news__item">
+            <img src="./img/content/news-2.jpg" alt="Красивый пейзаж" class="news__cover">
+            <div class="news__text-content">
+              <time class="news__date">ноябрь 2019</time>
+              <div class="news__title">Копите на поездку? Откройте счет!</div>
+              <div class="news__desc">
+                Хороший банк, хорошие условия. Откладывайте деньги! Наш банк самый лучший банк в мире!
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="pager">
+          <div class="pager__display">Страница 1 из 7</div>
+          <ul class="pager__list">
+            <li class="pager__item pager__item--active"> <a href="#" class="pager__link">1</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">2</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">3</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">4</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">5</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">6</a> </li>
+            <li class="pager__item"> <a href="#" class="pager__link">7</a> </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about">
+          <div class="about__desc">
+            <h2 class="about__title">О банке</h2>
+            <div class="about__desc-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odio fugiat eveniet laudantium corporis
+                cupiditate possimus minima repellendus ea accusamus nemo vel saepe, omnis architecto hic ipsa, neque
+                repellat iusto!
+              </p>
+            </div>
+            <a href="#" class="btn btn--color--ginger">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-container">
+      <div class="container footer-container__content">
+        <div class="footer">
+          <a href="/" class="logo">
+            <img src="./img/logo.png" alt="lion bank logo" class="logo__img">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active"> <a href="#" class="menu__link">Главная</a> </li>
+              <li class="menu__item"> <a href="#" class="menu__link">Услуги</a> </li>
+              <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a> </li>
+            </ul>
+          </nav>
+          <ul class="socials">
+            <li class="socials__item socials__item--icon--telegram">
+              <a href="#" class="socials__link"></a>
             </li>
-            <li class="menu__item">
-              <img src="" alt="" class="menu__icon">
-              <div class="menu__title">Маршруты</div>
+            <li class="socials__item socials__item--icon--vk">
+              <a href="#" class="socials__link"></a>
             </li>
-            <li class="menu__item">
-              <img src="" alt="" class="menu__icon">
-              <div class="menu__title">О нас</div>
+            <li class="socials__item socials__item--icon--fb">
+              <a href="#" class="socials__link"></a>
+            </li>
+            <li class="socials__item socials__item--icon--insta">
+              <a href="#" class="socials__link"></a>
             </li>
           </ul>
-        </nav>
-      </aside>
-    </div>
+          <address class="contacts">
+            <div class="contacts__desc">Бесплатный звонок по России</div>
+            <a href="tel:+78007003030" class="contacts__phone">8 800 700 30 30</a>
+          </address>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
