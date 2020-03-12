@@ -44,7 +44,8 @@ img {
   max-width: 100%;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -616,7 +617,7 @@ body, html {
   background: #f4f5f5;
 }
 
-.service:hover .service__btn  {
+.service:hover .service__btn {
   background: #dfb56d;
 }
 
@@ -717,7 +718,7 @@ body, html {
 .reviews__item {
   margin-bottom: 20px;
 }
-  
+
 .review {
   display: inline-flex;
   flex-direction: column;
@@ -817,4 +818,169 @@ body, html {
   font-size: 48px;
   font-weight: bold;
   line-height: 1.1;
+}
+
+/* welcome page*/
+
+.welcome {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background: url("./img/decor/smoke.png") center bottom / 100% auto no-repeat,
+    url("./img/decor/lion-jaws.png") center center no-repeat;
+}
+
+.welcome--video {
+  background: url("./img/bg/video.jpg") center center no-repeat;
+}
+
+.welcome--video .btn {
+  font-weight: bold;
+  background: #ff5400;
+  border-radius: 100px;
+}
+
+.welcome--asia {
+  background: url("./img/bg/airasia.jpg") center center no-repeat;
+}
+
+.welcome--asia .btn {
+  font-weight: bold;
+  background: #ff5400;
+  border-radius: 100px;
+}
+
+.welcome--asia .central__logo {
+  margin-bottom: 0;
+}
+
+.central__desc {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.central--lion {
+  animation: bounce 1.3s 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.central--video {
+  animation: jackInTheBox .9s 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.central--asia {
+  animation: zoom .9s 2s cubic-bezier(.17,.67,.25,1.04);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.central__logo {
+  margin-bottom: 65px;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(.7); 
+  }
+
+  20% {
+    transform: scale(1.15); 
+  }
+
+  40% {
+    transform: scale(.9); 
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(1.1); 
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+    opacity: 1;
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@keyframes bounce {
+  from {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0); 
+  }
+
+  20% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translateY(-30px);
+  }
+
+  53% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translateY(-15px);
+  }
+
+  80% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(-4px);
+  }
+
+
+  to {
+     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateY(0); 
+    opacity: 1;
+  }
 }
