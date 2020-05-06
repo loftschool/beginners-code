@@ -831,8 +831,7 @@ html {
   bottom: 0;
   align-items: center;
   justify-content: center;
-  background: url("./img/decor/smoke.png") center bottom / 100% auto no-repeat,
-    url("./img/decor/lion-jaws.png") center center no-repeat;
+  background: url("./img/decor/welcome-lion.jpg") center bottom / cover no-repeat;
 }
 
 .welcome--video {
