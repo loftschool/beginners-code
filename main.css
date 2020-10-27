@@ -49,6 +49,12 @@ html {
   height: 100%;
 }
 
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -185,6 +191,10 @@ html {
 .btn--color--ginger:hover {
   background: #d3a556;
   box-shadow: 0 0 25px 0 rgba(223, 181, 109, .15);
+}
+
+.btn--color--grey {
+  background: #8d8d8d;
 }
 
 .btn--color--black {
@@ -328,7 +338,7 @@ html {
 
 .news__item {
   height: 392px;
-  margin-right: 2%;
+  margin-right: 3%;
   flex: 1;
 }
 
@@ -1058,4 +1068,79 @@ html {
 
 .address--strong {
   font-weight: bold;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #202123;
+}
+
+.form__input::placeholder {
+  color: #666;
+}
+
+.form__input:last-child {
+  margin-right: 0px;
+}
+
+.form__input--textarea {
+  height: 232px;
+}
+
+.form__controls {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.form__controls-title {
+  width: 32%;
+  padding-left: 30px;
+  margin-right: 15px;
+}
+
+.controls {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.controls__item {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.controls__elem {
+  cursor: pointer;
+}
+
+.controls__checkbox:checked ~ .controls__tag {
+  background: #c7e9d0;
+}
+
+.controls__checkbox {
+  display: none;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__btn {
+  margin-right: 20px;
+}
+
+.form__btn:last-child {
+  margin-right: 0;
 }
