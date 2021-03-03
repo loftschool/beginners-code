@@ -565,7 +565,7 @@ button {
   display: flex;
   flex-direction: column;
   padding-bottom: 25px;
-  background: #202123 url("./img/decor/lion-head.jpg") right 28% top no-repeat;
+  background: #202123 url("./img/bg/lion-head-wide.png") center center / auto 100% no-repeat;
 }
 
 .top-line__container {
